@@ -40,6 +40,22 @@ Open up VLC, File -> Open and browse to the SDP file.
 
 Video should appear! 
 
+## Building
+
+### u-boot
+
+u-boot support looks like it is in the next release and currently in v2021-rc2.
+
+Can be built. 
+ - Clone u-boot
+ - export ARCH=arm
+ - export CROSS_COMPILE=arm-linux-gnueabi-
+ - make pinecube_defconfig
+ - make
+
+u-boot.bin is produced. 
+ [] Need to test it actually boots from it. 
+ [] Need to work out the boot process.
 ## Next steps
 
  [] Build uboot, kernel and RFS. Check support for this chip. Workout why Buildroot doesn't work
